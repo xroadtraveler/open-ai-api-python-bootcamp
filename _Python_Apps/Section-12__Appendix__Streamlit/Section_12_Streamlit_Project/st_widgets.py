@@ -19,3 +19,38 @@ if clicked:
 
 st.divider()
 
+
+# CHECKBOX
+agree = st.checkbox('I agree')
+if agree:
+    'Great, you agreed!'
+
+checked = st.checkbox('Continue', value=True)
+if checked:
+    ':+1:' * 5
+
+df = pd.DataFrame({'Name': ['Anne', 'Mario', 'Douglas'],
+                   'Age': [30, 45, 40]
+                   })
+
+if st.checkbox('Show data'):
+    st.write(df)
+
+st.divider()
+
+
+# RADIO
+pets = ['cat', 'dog', 'fish', 'turtle']
+pet = st.radio('Favorite pet', pets, index=2)
+st.write(f'Your favorite pet: {pet}')
+
+st.divider()
+
+
+# SELECT
+cities = ['London', 'Berlin', 'Paris', 'Madrid']
+city = st.selectbox('Your city', cities, index=1)
+st.write(f'You live in {city}')
+
+
+
