@@ -52,5 +52,18 @@ cities = ['London', 'Berlin', 'Paris', 'Madrid']
 city = st.selectbox('Your city', cities, index=1)
 st.write(f'You live in {city}')
 
+st.divider()
+
+
+# SLIDER
+x = st.slider('x', value=15, min_value=12, max_value=78, step=3)
+st.write(f'x is {x}')
+
+st.divider()
+
+
+# FILE UPLOADER
+uploaded_file = st.file_uploader('Upload a file:', type=[])
+
 
 
